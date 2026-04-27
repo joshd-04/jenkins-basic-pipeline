@@ -5,15 +5,15 @@ pipeline {
       steps {
         echo "Building project..."
       }
-    }
-    stage("Test"){
+    }stage("Test"){
       steps {
-        echo "Testing software..."
+        echo "Building project..."
       }
     }
     stage("Deploy"){
       steps {
-        echo "Deploying app..."
+        echo "Building project..."
+        docker ps
       }
     }
   }
