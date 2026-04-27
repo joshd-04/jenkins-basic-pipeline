@@ -5,7 +5,8 @@ pipeline {
       steps {
         echo "Building project..."
       }
-    }stage("Test"){
+    }
+    stage("Test"){
       steps {
         echo "Building project..."
       }
@@ -13,7 +14,7 @@ pipeline {
     stage("Deploy"){
       steps {
         echo "Building project..."
-        docker ps
+        sh 'docker ps'
       }
     }
   }
